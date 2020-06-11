@@ -1,0 +1,142 @@
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  background: #ddffff;
+}
+
+header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 20px;
+  margin-bottom: 100px;
+}
+
+.intro p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#open {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: #633ff5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+#open:active {
+  margin-top: 24px;
+  box-shadow: none;
+}
+
+#mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ccc;
+  opacity: 0.6;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.5s;
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  padding: 30px 30px 34px 30px;
+  border-radius: 16px;
+}
+
+#modal.hidden {
+  transform: translate(0, -500px);
+}
+
+.container {
+  margin: 0 auto;
+  width: 350px;
+  height: 150px;
+  background: #83b0f8;
+  border-radius: 30px;
+  padding: 20px 30px 5px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 0 #5d9afd;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#timer {
+  background: rgb(243, 241, 241);
+  border-radius: 10px;
+  align-self: center;
+  height: 130px;
+  line-height: 130px;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  margin-bottom: 6px;
+  line-height: 45px;
+  background: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 0 #eee;
+}
+
+#close {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: #633ff5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+#close:active {
+  margin-top: 54px;
+  box-shadow: none;
+}
+
+.inactive {
+  margin-top: 4px;
+  box-shadow: none;
+  opacity: 0.6;
+}
